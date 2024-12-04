@@ -71,9 +71,9 @@ class Field():
     }
 
 
-  def get_bb_points(self, arr):
+  def get_bb_points(self):
     '''
-    Given an array of 2D points, return the four vertex bounding box
+    Given an array of 2D points (specified in self.domains), return the four vertex bounding box
     '''
     return np.array([
       [self.domains['x']['min'], self.domains['y']['min']],
